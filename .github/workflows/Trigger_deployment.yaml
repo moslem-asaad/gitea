@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: Build
     env:
-      Gitea_REPO_NAME: moslem-asaad/gitea
+      Gitea_REPO_NAME: moslem-asaad/Gitea-Test-Automatio
       UI_TESTING_WORKFLOW_ID: ui_testing.yaml
     steps:
       - name: Trigger the Selenium testing workflow
