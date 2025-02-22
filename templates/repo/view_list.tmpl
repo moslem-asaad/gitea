@@ -9,6 +9,10 @@
 		{{svg "octicon-file-directory-fill"}} ..
 	</a>
 	{{end}}
+	<!-- Add this button for quick navigation to root -->
+	<a class="repo-file-line go-to-root silenced" href="{{.RepoLink}}/src/branch/main/" style="margin-bottom: 10px; font-weight: bold; color: #007bff;">
+		🔝 Go to Root
+	</a>
 	{{range $item := .Files}}
 		<div class="repo-file-item">
 			{{$entry := $item.Entry}}
